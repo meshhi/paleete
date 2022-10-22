@@ -9,7 +9,7 @@ function Column({id, color, isLocked, setColumnColor}) {
                 {color}
             </h2>
         {/* </button> */}
-        <button>Locked: {String(isLocked)}</button>
+        <button className={cl.lockedButton}>Locked: {String(isLocked)}</button>
     </div>
     );
 }
