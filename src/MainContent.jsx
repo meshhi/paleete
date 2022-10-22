@@ -1,5 +1,5 @@
 import './MainContent.css';
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import ColumnList from './components/ColumnList';
 
 function MainContent() {
