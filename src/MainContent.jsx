@@ -37,7 +37,7 @@ function MainContent() {
 
   return (
     <div className="main-content">
-      <ColumnList columns={columns} setColumnColor={setColumnColor} generateRandomColor={generateRandomColor}/>
+      <ColumnList columns={columns} setColumnColor={setColumnColor}/>
     </div>
   );
 }
