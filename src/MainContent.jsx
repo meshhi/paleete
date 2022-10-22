@@ -23,13 +23,22 @@ function MainContent() {
 
   let columnList = [createColumn(), createColumn(), createColumn(), createColumn(), createColumn()];
   let [columns, setColumns] = useState(columnList);
-  let [columnsCount, setcolumnsCount] = useState(5);
 
   let setColumnColor = (id) => {
     let updatedColumns = [...columns];
     for(let i = 0; i < updatedColumns.length; i++){
-      if (updatedColumns[i].id === id){
+      if ((updatedColumns[i].id === id) && (!updatedColumns[i].isLocked)){
         updatedColumns[i].color = generateRandomColor();
+      }
+    }
+    setColumns(updatedColumns);
+  }
+
+  let lockToggle = (id) => {
+    let updatedColumns = [...columns];
+    for(let i = 0; i < updatedColumns.length; i++){
+      if (updatedColumns[i].id === id){
+        updatedColumns[i].isLocked = !updatedColumns[i].isLocked;
       }
     }
     setColumns(updatedColumns);
@@ -37,7 +46,7 @@ function MainContent() {
 
   return (
     <div className="main-content">
-      <ColumnList columns={columns} setColumnColor={setColumnColor}/>
+      <ColumnList columns={columns} setColumnColor={setColumnColor} lockToggle={lockToggle}/>
     </div>
   );
 }
