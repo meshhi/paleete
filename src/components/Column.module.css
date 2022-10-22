@@ -6,5 +6,16 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+    border: 0px solid black;
+}
+
+.colorTitle{
+    color: white;
+    border-radius: 10%;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.colorTitle:hover{
+    background-color: rgba(0, 0, 0, 0.05);
 }
