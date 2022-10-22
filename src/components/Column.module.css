@@ -12,7 +12,6 @@
 }
 
 .colorTitle{
-    color: white;
     border-radius: 2vh;
     padding: 2vh;
     cursor: pointer;
@@ -23,10 +22,20 @@
     background-color: rgba(114, 114, 114, 0.2);
 }
 
+.colorAllTitle{
+    border-radius: 2vh;
+    padding: 2vh;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.colorAllTitle:hover{
+    background-color: rgba(114, 114, 114, 0.2);
+}
+
 .lockButton{
     border: 0;
     border-radius: 2vh;
-    color: white;
     background-color: rgba(114, 114, 114, 0);
     padding: 2vh;
     cursor: pointer;
