@@ -21,7 +21,7 @@ function MainContent() {
     return {id: id, color: color, isLocked: isLocked}
   }
 
-  let columnList = [createColumn(), createColumn(), createColumn(), createColumn(), createColumn()];
+  let columnList = [createColumn(), createColumn(), createColumn(), createColumn(), createColumn(), createColumn()];
   let [columns, setColumns] = useState(columnList);
 
   let setColumnColor = (id) => {
