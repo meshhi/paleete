@@ -1,11 +1,15 @@
 import React from 'react';
 import cl from './Column.module.css';
 
-function Column() {
+function Column({id, color, isLocked, setColumnColor}) {
     return (
-    <div className={cl.column}>
-        <h2>#HHHHHH</h2>
-        <button>Generate</button>
+    <div className={cl.column} style={{backgroundColor: color}}>
+        <button onClick={() => setColumnColor(id)}>
+            <h2>
+                {color}
+            </h2>
+        </button>
+        <button>Locked: {String(isLocked)}</button>
     </div>
     );
 }
