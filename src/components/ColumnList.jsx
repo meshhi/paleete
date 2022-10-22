@@ -2,7 +2,7 @@ import React from 'react';
 import cl from './ColumnLists.module.css';
 import Column from './Column';
 
-function ColumnList({columns, setColumnColor, generateRandomColor}) {
+function ColumnList({columns, setColumnColor}) {
     return (
     <main className={cl.columns}>
         {

@@ -1,12 +1,14 @@
 .column{
-    background-color: green;
-    width: 100%;
+    flex: 20%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 0px solid black;
+}
+
+@media screen and (max-width: 600px){
+
 }
 
 .colorTitle{
