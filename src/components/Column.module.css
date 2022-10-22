@@ -21,7 +21,7 @@
     background-color: rgba(114, 114, 114, 0.2);
 }
 
-.lockedButton{
+.lockButton{
     border: 0;
     border-radius: 2vh;
     color: white;
@@ -31,6 +31,6 @@
     transition: background 0.3s;
 }
 
-.lockedButton:hover{
+.lockButton:hover{
     background-color: rgba(114, 114, 114, 0.2);
 }

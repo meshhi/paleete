@@ -3,7 +3,6 @@ import cl from './ColumnLists.module.css';
 import Column from './Column';
 
 function ColumnList({columns, setColumnColor, generateRandomColor}) {
-
     return (
     <main className={cl.columns}>
         {
